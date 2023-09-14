@@ -8,63 +8,111 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div>
-          <h1>Ivan Grivtsov</h1>
-          <p>Web Developer</p>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="about-me" id="about">
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          aperiam incidunt quas debitis illo temporibus id consectetur
-          perspiciatis veritatis quod maiores nam ipsum, laboriosam eaque quidem
-          sed natus dolorum dolore?
-        </p>
-      </section>
-      <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5 & CSS3</li>
-          <li>JavaScript</li>
-          <li>Responsive Design</li>
-          <li>Figma</li>
-          <li>GitHub</li>
-        </ul>
-      </section>
-      <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <ul>
+    <header>
+      <div class="name container">
+        <ul class="header-list">
           <li>
-            <div></div>
+            <img
+              src="./images/avatar.jpg"
+              alt="avatar"
+              width="100"
+              height="100"
+              class="header-image"
+            />
           </li>
-          <li>
-            <div></div>
+          <li><h1 class="name-title">Ivan Grivtsov</h1></li>
+          <li><p class="name-prof">Web Developer</p></li>
+        </ul>
+      </div>
+      <nav class="nav-block">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-el">About</a></li>
+          <li><a href="#skills" class="nav-el">Skills</a></li>
+          <li><a href="#projects" class="nav-el">Projects</a></li>
+          <li><a href="#contact" class="nav-el">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about-me container" id="about">
+      <h2 class="section-title">About Me</h2>
+      <pc class="about-me-desc">
+        I started studying IT with hillel, then continued at STEP school, and
+        also studied Python. Now I am studying at the faculty of Computer
+        Science at the University of the Alfred Nobel. At the same time, I focus
+        on web development, especially I wanna to become a full-stack developer.
+      </pc>
+    </section>
+    <section class="skills container" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Figma</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+    <section class="projects container" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-block">
+            <h3>1.WebStudio layout web-site</h3>
+            <a
+              href="https://github.com/AnWhiteM/hw-6"
+              target="_blank"
+              class="project-link"
+              >https://github.com/AnWhiteM/hw-6</a
+            >
+            <p>
+              This is a layout of a typical Web development studio. There are 2
+              pages, mobile menu and modal window, where you can make an order.
+              Also site is adapted for mobile and table versions.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="project-block">
+            <h3>2.Focus.Frame Photography school - Team Project</h3>
+            <a
+              href="https://olichkakhamuliak.github.io/photography-school/"
+              target="_blank"
+              class="project-link"
+              >https://olichkakhamuliak.github.io/photography-school/</a
+            >
+            <p>
+              This is a Team-made Site about Photography school. It has some
+              animations and mobile menu. I was a SCRUM Master of this Project
+              and made a Footer as similar as on the layout.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer-class container" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <address>
+        <ul class="adr-ul">
+          <li class="adr-li">
+            Email:
+            <a href="mailto:ivangrivtsov0@gmail.com">
+              ivangrivtsov0@gmail.com</a
+            >
+          </li>
+          <li class="adr-li">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/иван-гривцов-147189247/">
+              Ivan Grivtsov</a
+            >
+          </li>
+          <li class="adr-li">
+            GitHub: <a href="https://github.com/AnWhiteM">AnWhiteM</a>
           </li>
         </ul>
-      </section>
-      <footer>
-        <h2>Contact</h2>
-        <address>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </address>
-        <div>
-          <p></p>
-        </div>
-      </footer>
+      </address>
+    </footer>
+    <div class="footer-foot">
+      <p class="footer-name"><span>&#169;</span>2023 Ivan Grivtsov</p>
     </div>
   </body>
 </html>

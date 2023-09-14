@@ -16,6 +16,22 @@ ul {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
+  max-width: 320px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
 }
 .name {
   background-color: rgb(53, 52, 52);
@@ -49,16 +65,24 @@ ul {
 
 .nav-block {
   background-color: rgb(68, 67, 67);
-  height: 40px;
+  max-height: 256px;
 
   margin-top: 41px;
 }
 .nav-list {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 20px;
   padding-top: 10px;
   padding-right: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
 }
 .nav-el {
   text-decoration: none;
@@ -105,7 +129,9 @@ ul {
   background-color: #fff;
   border: 1px solid rgb(202, 202, 202);
   padding: 10px;
+  display: inline-block;
 }
+
 .project-link {
   text-decoration: none;
   color: #121212;
